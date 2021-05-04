@@ -18,8 +18,6 @@ import (
 const (
 	sequencer = "sequencer"
 	l1        = "l1"
-	EIP155    = "EIP155"
-	ETH_SIGN  = "ETH_SIGN"
 )
 
 // errElementNotFound represents the error case of the remote element not being
@@ -76,7 +74,6 @@ type transaction struct {
 	Origin      *common.Address `json:"origin"`
 	Data        hexutil.Bytes   `json:"data"`
 	QueueOrigin string          `json:"queueOrigin"`
-	Type        string          `json:"type"`
 	QueueIndex  *uint64         `json:"queueIndex"`
 	Decoded     *decoded        `json:"decoded"`
 }
